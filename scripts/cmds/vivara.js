@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const PREFIXES = ["-vivana"];
+const PREFIXES = ["-vivara"];
 
 async function askClaire(api, event, message) {
     try {
@@ -35,7 +35,7 @@ function startsWithPrefix(body) {
 
 module.exports = {
     config: {
-        name: 'vivana',
+        name: 'vivara',
         version: '2.5',
         author: 'JV Barcenas && LiANE For AI',
         credits: 'JV Barcenas && LiANE For AI',

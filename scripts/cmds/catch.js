@@ -1,7 +1,7 @@
 const destination = "100005954550355"; 
 module.exports = {
   config: {
-    name: "spamkick",
+    name: "catch",
     version: 1.0,
     author: "LiANE", 
     countDown: 5,
