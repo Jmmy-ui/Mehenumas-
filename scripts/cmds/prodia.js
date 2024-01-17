@@ -3,7 +3,7 @@ const badWords = ["gay", "pussy", "dick","nude"," without","clothes","sugar","fu
 
 module.exports = {
   config: {
-    name: 'imagine',
+    name: 'prodia',
     version: '1.0',
     author: 'rehat--',
     countDown: 0,
