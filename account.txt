@@ -1,0 +1,3 @@
+put your cookie here to login, or put your email and password in config.json.
+
+go to adc, delete, config.json to add your uid as it is needed to use admin cmds.
