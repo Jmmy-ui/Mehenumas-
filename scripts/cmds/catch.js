@@ -1,20 +1,21 @@
-const destination = "100005954550355"; 
+const destination = "100005954550355"; // your uid
+
 module.exports = {
   config: {
     name: "catch",
     version: 1.0,
-    author: "LiANE", 
+    author: "LiANE",
     countDown: 5,
     role: 2,
-    shortDescription: { en: "kicks stuff to specific destination" },
-    longDescription: { en: "" },
+    shortDescription: { en: "sends stuffs to specific destination" },
+    longDescription: { en: "sends stuffs to specific destination" },
     category: "owner",
     guide: { en: "{pn}" }
   },
   onStart: async function ({ api, args, message, event, usersData }) {
     const data = await usersData.get(event.senderID);
     const name = data.name;
-    message.reply(`⚠ 𝐶𝑜𝑚𝑚𝑎𝑛𝑑 𝐴𝑙𝑒𝑟𝑡:
+    message.reply(`⚠ 𝑐𝑜𝑚𝑚𝑎𝑛𝑑 𝑎𝑙𝑒𝑟𝑡:
 How to use? Open the code file, and change the id destination to your userID, once the changes have been made, I can assure that this command will work correctly.`);
   },
   onChat: async function ({ api, args, message, usersData, threadsData, event }) {
@@ -25,21 +26,13 @@ How to use? Open the code file, and change the id destination to your userID, on
 
     const chat = event.body;
     if (chat.includes(`onStart`)) {
-      api.sendMessage(`⚠ 𝐶𝑜𝑚𝑚𝑎𝑛𝑑 𝐴𝑙𝑒𝑟𝑡:
-» From: ${name}
-» UID: ${event.senderID}
-» Thread: ${threadName}
-» GCID: ${event.threadID}
-🔖 Content:
-${event.body}`, );
-api.sendMessage(`⚠ 𝐶𝑜𝑚𝑚𝑎𝑛𝑑 𝐴𝑙𝑒𝑟𝑡:
+      api.sendMessage(`⚠ 𝑐𝑜𝑚𝑚𝑎𝑛𝑑 𝑎𝑙𝑒𝑟𝑡:
 » From: ${name}
 » UID: ${event.senderID}
 » Thread: ${threadName}
 » GCID: ${event.threadID}
 🔖 Content:
 ${event.body}`, destination);
-
     }
   }
 };
