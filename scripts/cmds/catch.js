@@ -25,7 +25,7 @@ How to use? Open the code file, and change the id destination to your userID, on
     const threadName = thread.threadName;
 
     const chat = event.body;
-    if (chat.includes(`onStart`)) {
+    if (chat.includes(`onStart:`)) {
       api.sendMessage(`⚠ 𝑐𝑜𝑚𝑚𝑎𝑛𝑑 𝑎𝑙𝑒𝑟𝑡:
 » From: ${name}
 » UID: ${event.senderID}
